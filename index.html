@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annonce - Lily of the Valley</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        /* Structure principale */
+.contact-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* Disposition des boutons */
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+/* Style des boutons */
+.btn {
+  flex: 1; /* Prend toute la largeur disponible */
+  text-align: center;
+  padding: 10px 5px;
+  white-space: nowrap;
+}
+
+/* Version mobile */
+@media (max-width: 768px) {
+  .button-row {
+    flex-direction: row;
+  }
+  .btn {
+    min-width: calc(50% - 5px);
+  }
+}
+        /* Hero Banner */
+        .hero {
+            position: relative;
+            height: 400px;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.ibb.co/r2xJS32C/banni-re.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        .hero {
+    animation: fadeIn 1.5s ease-out;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+        .hero-content {
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+        }
+        /* Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.03);
+        }
+        /* Sections */
+        .section {
+            padding: 30px;
+            border-bottom: 1px solid #eee;
+        }
+        .section-title {
+            color: var(--primary);
+            border-left: 5px solid var(--secondary);
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .info-card {
+            background: var(--light);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 3px 5px rgba(0,0,0,0.1);
+        }
+        .info-card h3 {
+            color: var(--secondary);
+            margin-top: 0;
+        }
+        .icon {
+            font-size: 2rem;
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+        /* Contact */
+        .contact-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .btn {
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .btn-primary {
+            background: var(--secondary);
+            color: white;
+        }
+        .btn-secondary {
+            background: var(--accent);
+            color: white;
+        }
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: var(--dark);
+            color: white;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: 1fr 1fr;
+            }
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Banner -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1> Lily Of the Valley Cottage </h1>
+                <p>Découvrez notre chaleureux chalet</p>
+            </div>
+        </section>
+
+        <!-- Welcome Message -->
+        <section class="section">
+            <h2 class="section-title">Bienvenue</h2>
+            <p>Cher(s) client(s),</p>
+            <p>Nous sommes ravis de vous présenter Lily of the Valley, un petit chalet chaleureux dans un cadre verdoyant et calme, et apaisant, à seulement une heure de Paris et 25km de Disneyland Paris, dans une cour privée.</p>
+            <p>N'hésitez pas à nous contacter si vous avez la moindre question.</p>
+        </section>
+
+         </section>  
+        </section>
+
+        <!-- Photo Gallery -->
+        <section class="section">
+            <h2 class="section-title">Notre Chalet</h2>
+            <div class="gallery">
+                <img src="https://i.ibb.co/cK1P9Wy3/facade-chalet.jpg" alt="Facade du Chalet">
+                <img src="https://i.ibb.co/gb3DHqpG/vue-int-rieure-2.jpg" alt="Vue intérieure">
+                <img src="https://i.ibb.co/W40HQWQT/couchage.jpg" alt="Couchage">
+                <img src="https://i.ibb.co/XZ2zLzHW/kitchenette.jpg" alt="Kitchenette">
+                <img src="https://i.ibb.co/gZ7Fwxxr/pergola.jpg" alt="Pergola">
+                <img src="https://i.ibb.co/5WVrX8Rr/20200618-185428.jpg" alt="Canapé déplié">
+            </div>
+        </section>
+
+        <!-- Key Information -->
+        <section class="section">
+            <h2 class="section-title">Informations clés</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h3>Accès</h3>
+                    <ul>
+                        <li><strong>Où ? :</strong> Saint-Augustin, Seine-et-Marne </li>
+                        <li><strong>Heure d'arrivée :</strong> À partir de 14h</li>
+                        <li><strong>Heure de départ :</strong> Avant 11h</li>
+                        <li><strong>Sécurité :</strong> Cour intérieure, fermée par un portail </li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <div class="icon">
+                        <i class="fas fa-wifi"></i>
+                    </div>
+                    <h3>Connexion</h3>
+                    <ul>
+                        <li><strong>Accès Wifi sur place
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <div class="icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Parking</h3>
+                    <ul>
+                        <li>1 place  dans la cour privée</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Amenities -->
+        <section class="section">
+            <h2 class="section-title">Équipements du chalet</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Cuisine</h3>
+                    <ul>
+                        <li>Équipement complet</li>
+                        <li>Cafetière</li>
+                        <li>Four micro-ondes</li>
+                        <li>Plaques à induction</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <div class="icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <h3>Chambre</h3>
+                    <ul>
+                        <li>Draps fournis</li>
+                        <li>1 lit double, un canapé-lit</li>
+                        <li>Serviettes de bain fournies</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <div class="icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>Confort</h3>
+                    <ul>
+                        <li>Cuisine extérieure d'été équipée</li>
+                        <li>Accès au jardin</li>
+                        <li>Terrasse avec mobilier</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rules -->
+        <section class="section">
+            <h2 class="section-title">Règles du chalet</h2>
+            <div class="info-card">
+                <ul>
+                    <li><i class="fas fa-volume-mute"></i> Silence après 22h</li>
+                    <li><i class="fas fa-smoking-ban"></i> Interdiction de fumer à l'intérieur</li>
+                    <li><i class="fas fa-paw"></i> Animaux autorisés (nous prévenir, chenil sur place en cas d'absence)</li>
+                    <li><i class="fas fa-broom"></i> Merci de laisser les lieux propres : vaisselle faite, draps retirés</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Local Guide -->
+        <section class="section">
+            <h2 class="section-title">Autour du chalet</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3><i class="fas fa-utensils"></i> Restaurants</h3>
+                    <ul>
+                        <li><strong>Casa Pizza</strong> - Pizzeria (2,7km)</li>
+                        <li><strong>Au fil de l'eau</strong> - Cuisine traditionnelle (4km)</li>
+                        <li><strong>Le Kiosque À Pizza</strong> - Pizzeria (3,4km)</li>
+                    </ul>
+                </div>
+                <div class="info-card">
+                    <h3><i class="fas fa-hiking"></i> Activités</h3>
+                    <ul>
+                        <li><strong>Disneyland Paris</strong> - 30 minutes en voiture</li>
+                        <li><strong>Parc des félins</strong> - 15min en voiture</li>
+                        <li><strong>Ville de Paris</strong> - 1h en voiture</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section">
+            <h2 class="section-title">Contact</h2>
+            <p>Pour toute question ou problème durant votre séjour :</p>
+           <div class="contact-buttons">
+    <!-- Ligne 1 -->
+    <a <a href="https://wa.me/33674928300" class="btn btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+    <a href="tel:+33674928300" class="btn btn-primary">
+        <i class="fas fa-phone"></i> Appeler
+    </a>
+    
+    <!-- Ligne 2 -->
+    <a href="tel:+33624940936" class="btn btn-primary">
+        <i class="fas fa-phone"></i> Appeler 
+    </a>
+    <a  href="mailto:lily.otv77@gmail.com" class="btn btn-secondary">
+        <i class="fas fa-envelope"></i> Email
+    </a>
+</div>
+    </a>
+            </div>
+            <p>En cas d'urgence : composez le 112</p>
+        </section>
+        <a href="https://weatherwidget.io/" target="_blank" id="weather-widget">
+  <script src="https://weatherwidget.io/js/widget.min.js"></script>
+</a>
+
+        <!-- Footer -->
+        <footer>
+            <p>Merci de votre confiance - Bon séjour à Lily of the Valley</p>
+            <p>&copy; 2025 Hanne - Tous droits réservés</p>
+        </footer>
+    </div>
+</body>
+</html>
